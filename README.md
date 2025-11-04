@@ -1,16 +1,116 @@
-# React + Vite
+📖 Audiophile E-Commerce <a name="audiophile"></a>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Audiophile is a fully responsive e-commerce website for premium audio products, built to match the official Audiophile design system as closely as possible.  
+It includes dynamic product browsing, category pages, a cart system, and a complete checkout experience.
 
-Currently, two official plugins are available:
+This project focuses on delivering a **pixel-perfect UI**, strong frontend architecture, and a **functional checkout workflow** that stores orders and sends confirmation notifications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠 Built With <a name="built-with"></a>
 
-## React Compiler
+### Tech Stack <a name="tech-stack"></a>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<details>
+  <summary>Framework</summary>
+  <ul>
+    <li><a href="https://react.dev/">React</a> — Component-based UI framework</li>
+  </ul>
+</details>
 
-## Expanding the ESLint configuration
+<details>
+  <summary>Build Tool</summary>
+  <ul>
+    <li><a href="https://vitejs.dev/">Vite</a> — Fast local development and optimized builds</li>
+  </ul>
+</details>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<details>
+  <summary>Routing</summary>
+  <ul>
+    <li><a href="https://reactrouter.com/">React Router DOM</a> — Page and category navigation</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Backend / Database</summary>
+  <ul>
+    <li><a href="https://www.convex.dev/">Convex</a> — Realtime backend for storing orders and checkout details</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Forms & Validation</summary>
+  <ul>
+    <li>Custom form validation — Inline feedback, accessibility-friendly error handling</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Email Delivery</summary>
+  <ul>
+    <li>Transactional HTML confirmation email upon checkout</li>
+  </ul>
+</details>
+
+---
+
+### Key Features <a name="key-features"></a>
+
+🎧 **Pixel-perfect implementation** of the Audiophile design system  
+🛍 **Product browsing** by categories  
+🧺 **Shopping cart with quantity control**  
+🧾 **End-to-end checkout** with detailed validation  
+📦 **Orders stored in Convex backend**  
+📨 **Order confirmation email** with product summary  
+📱 Fully responsive across **desktop, tablet, and mobile devices**  
+⚡ Built with **Vite** for fast performance  
+
+<p align="right">(<a href="#audiophile">back to top</a>)</p>
+
+---
+
+🚀 Live Demo <a name="live-demo"></a>  
+https://peaceful-buttercream-ec64b5.netlify.app/
+
+- UI Demo: _coming soon_
+
+---
+
+💻 Getting Started <a name="getting-started"></a>
+
+### Prerequisites
+Ensure you have the following installed:
+
+- Node.js (v18+)
+- npm (v9+)
+- Git
+
+### Setup
+
+Clone the repository:
+```bash
+git clone git@github.com:blessing-michael/audiophile.git
+cd audiophile
+npm install
+npm run dev
+http://localhost:5173
+npm run build
+
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Author1**
+
+- GitHub: [blessing-michael](https://github.com/blessing-michael)
+- Twitter: [@toonmystory](https://twitter.com/toonmystory)
+- LinkedIn: [Blessing Asuquo](https://www.linkedin.com/in/blessing-asuquo-4509981a2/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+⭐️ Show Your Support <a name="support"></a>
+
+Give this project a ⭐️ if you found it helpful or inspiring!
+
+<p align="right">(<a href="#audiophile">back to top</a>)</p> ```
