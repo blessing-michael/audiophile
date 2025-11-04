@@ -1,3 +1,5 @@
+<a name="readme-top"></a>
+
 📖 Audiophile E-Commerce <a name="audiophile"></a>
 
 Audiophile is a fully responsive e-commerce website for premium audio products, built to match the official Audiophile design system as closely as possible.  
@@ -87,18 +89,18 @@ Ensure you have the following installed:
 ### Setup
 
 Clone the repository:
-```bash
 git clone git@github.com:blessing-michael/audiophile.git
 cd audiophile
 npm install
+npm run build
 npm run dev
 http://localhost:5173
+
 npm run build
 
+### 👥 Authors <a name="authors"></a>
 
-## 👥 Authors <a name="authors"></a>
-
-👤 **Author1**
+👤 **Blessing Michael**
 
 - GitHub: [blessing-michael](https://github.com/blessing-michael)
 - Twitter: [@toonmystory](https://twitter.com/toonmystory)
@@ -106,11 +108,20 @@ npm run build
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🤝 Contributing <a name="contributing"></a>
+---
+
+### 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
-⭐️ Show Your Support <a name="support"></a>
 
-Give this project a ⭐️ if you found it helpful or inspiring!
+Feel free to submit a PR or open an issue ✨
 
-<p align="right">(<a href="#audiophile">back to top</a>)</p> ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+### ⭐️ Show Your Support <a name="support"></a>
+
+If you found this project helpful or inspiring, please **give it a star** ⭐️
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
