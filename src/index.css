@@ -1,0 +1,16 @@
+:root {
+  --clr-orange-primary: #D87D4A;
+  --clr-white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}

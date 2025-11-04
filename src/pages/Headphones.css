@@ -1,0 +1,503 @@
+/* Optional: To ensure the whole page starts clean */
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply to the direct parent of your header and your title section */
+body {
+    display: flex;
+    flex-direction: column;
+    /* Stacks the header and title section vertically */
+    /* ... other body styles ... */
+}
+
+/* Wrapper to center content and apply padding */
+.content-wrapper {
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* --- Page Title Styling --- */
+.page-title-section {
+    text-align: center;
+    padding: 80px 0 100px 0;
+    background-color: black;
+    /* width: 1440px;
+    height: 336px; */
+    opacity: 1;
+
+}
+
+.page-title-section h1 {
+    /* font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 2px; */
+    color: white;
+
+}
+
+/* --- Product Listing Modules --- */
+.product-listing-module,
+.brand-promo-section {
+    display: flex;
+    align-items: center;
+    gap: 125px;
+    margin-bottom: var(--section-spacing);
+}
+
+.product-listing-module.reverse-layout {
+    flex-direction: row-reverse;
+}
+
+.product-image-container,
+.brand-image-container {
+    flex: 1;
+    background-color: var(--clr-light-grey);
+    border-radius: 8px;
+    padding: 50px;
+    text-align: center;
+    width: 540;
+    height: 560;
+    /* angle: 0 deg; */
+    opacity: 1;
+    top: 496px;
+    left: 165px;
+    /* background-color: aquamarine; */
+
+}
+
+.product-image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-text-container,
+.brand-text-content {
+    flex: 1;
+    padding-right: 40px;
+    width: 445;
+    height: 343;
+    /* angle: 0 deg; */
+    opacity: 1;
+    top: 605px;
+    left: 830px;
+
+}
+
+.product-text-container h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+}
+
+.product-text-container h3 {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 14px;
+    /* leading-trim: NONE; */
+    line-height: 100%;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: var(--clr-orange-primary);
+    margin-bottom: 1rem;
+
+}
+
+.product-text-container p {
+    color: gray;
+    margin-bottom: 40px;
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 15px;
+    /* leading-trim: NONE; */
+    line-height: 25px;
+    letter-spacing: 0px;
+
+}
+
+/* Orange CTA Button Styling */
+.cta-button {
+    display: inline-block;
+    background-color: var(--clr-orange-primary);
+    color: var(--clr-white);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #FBAF85;
+}
+
+.main-section {
+    /* background-color: aquamarine; */
+    padding: 4rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* --- Bottom Promotional Section --- */
+.brand-promo-section,
+.product-listing-module {
+
+    /* centers horizontally */
+}
+
+.brand-text-content {
+    flex: 1;
+}
+
+.brand-text-content h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 32px;
+}
+
+.brand-text-content .highlight {
+    color: var(--clr-orange-primary);
+}
+
+.brand-text-content p {
+    color: var(--clr-dark-grey);
+}
+
+.brand-image-container {
+    flex: 1;
+    background-color: var(--clr-light-grey);
+    border-radius: 8px;
+    padding: 50px;
+    text-align: center;
+    width: 540;
+    height: 560;
+    /* angle: 0 deg; */
+    opacity: 1;
+    top: 496px;
+    left: 165px;
+    /* padding-right: 10rem; */
+    /* margin-right: 13rem; */
+    /* background-color: aquamarine; */
+}
+
+.brand-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.brand-text-content h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+    margin-left: 3rem;
+}
+
+
+
+.brand-text-content p {
+    color: gray;
+    margin-bottom: 40px;
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 15px;
+    /* leading-trim: NONE; */
+    line-height: 25px;
+    letter-spacing: 0px;
+    margin-left: 3rem;
+
+
+}
+
+/* Ensure the main wrapper centers everything */
+.main-section {
+    display: flex;
+    flex-direction: column;
+    /* Stack sections vertically */
+    align-items: center;
+    /* Centers them horizontally */
+    width: 100%;
+    padding: 4rem 0;
+}
+
+/* Center and contain each product section */
+.product-listing-module,
+.brand-promo-section {
+    display: flex;
+    justify-content: center;
+    /* Centers inner content horizontally */
+    align-items: center;
+    /* Centers vertically if needed */
+    gap: 125px;
+    width: 100%;
+    max-width: 1200px;
+    /* Keep content nicely contained */
+    margin: 0 auto;
+    /* Centers whole section in the page */
+    padding: 2rem 1rem;
+    /* Optional breathing space */
+}
+
+/* Orange CTA Button Styling */
+.cta-button-b {
+    display: inline-block;
+    background-color: var(--clr-orange-primary);
+    color: var(--clr-white);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    border: none;
+    transition: background-color 0.3s;
+    margin-left: 3rem;
+}
+
+.cta-button-b:hover {
+    background-color: #FBAF85;
+}
+
+/* --- Category Thumbnails Row --- */
+
+
+
+
+.category-item:hover {
+    transform: translateY(-5px);
+}
+
+
+
+.category-item p {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* ................. */
+/* --- 1. Layout Container (category-thumbnails) --- */
+.category-thumbnails {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: var(--section-spacing) auto;
+
+    max-width: 1110px;
+    margin: 100px auto 100px auto;
+}
+
+/* --- 2. Individual Category Item (category-item) --- */
+.category-item {
+    flex: 1;
+
+    text-align: center;
+
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--clr-black);
+    transition: transform 0.3s;
+    width: 350px;
+    height: 204px;
+    /* angle: 0 deg; */
+    opacity: 1;
+    top: 80px;
+
+    /* Use Flexbox to stack content (image, text, link) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #F1F1F1;
+
+    padding: 116px 30px 30px 30px;
+    width: 350px;
+
+    border-radius: 8px;
+    text-decoration: none;
+    color: #000;
+
+
+    position: relative;
+    margin-top: 20px;
+}
+
+/* --- 3. Image Styling (The "Floating" Effect) --- */
+.category-item img {
+    /* *** KEY TO THE FLOATING EFFECT *** */
+    position: absolute;
+    top: -40px;
+
+    object-fit: contain;
+
+    width: 123px;
+
+    height: 160px;
+
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    margin-top: -50px;
+
+
+
+    opacity: 1;
+}
+
+/* --- 4. Text Styling (P) --- */
+.category-item p {
+    margin-top: 15px;
+    /* Space below the image */
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- Styling the SHOP Link Container --- */
+.shop-link-container {
+    display: flex;
+    /* Aligns the text and icon side-by-side */
+    align-items: center;
+    gap: 8px;
+    /* Small space between "SHOP" and the arrow */
+    margin-top: 15px;
+    /* Adds space below the category name */
+}
+
+/* --- Styling the "SHOP" Text --- */
+.shop-text {
+    color: #7f7c7c;
+    /* The primary orange accent color */
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+
+    /* background: #000000; */
+    font-family: Manrope;
+    line-height: 100%;
+
+
+
+
+}
+
+/* --- Styling the Angle Icon --- */
+.shop-angle-icon {
+    color: #D87D4A;
+    /* Same orange color */
+    font-size: 12px;
+    /* Make the icon much smaller than the text */
+
+
+}
+
+/* --- Optional: Hover Effect for Interaction --- */
+.category-item:hover .shop-text,
+.category-item:hover .shop-angle-icon {
+    color: #FBAF85;
+    /* A slightly lighter/more vivid orange on hover */
+}
+
+/* ............................................... */
+/* --- 1. Main Layout Container (brand-promo-section) --- */
+.brand-promo-section-2 {
+    /* Flexbox for side-by-side alignment */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Vertically centers content */
+
+    /* Constrain and center the entire section */
+    max-width: 1110px;
+    margin: 100px auto 100px auto;
+    /* Add vertical spacing and center */
+    gap: 125px;
+    /* Large space between the text and the image */
+}
+
+/* --- 2. Text Content Container (brand-text-content) --- */
+.brand-text-content-2 {
+    /* Occupy roughly 40% of the space to give the image more room */
+    flex-basis: 445px;
+    max-width: 445px;
+    padding-right: 20px;
+    /* Slight padding on the right side */
+    text-align: left;
+    /* Ensure text is left-aligned */
+}
+
+/* --- 3. Heading (h3) Styling --- */
+.brand-text-content-2 h3 {
+    /* Font style matching the image (large, bold, uppercase) */
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+    /* Space below the heading */
+}
+
+/* The 'BEST' text in orange */
+.brand-text-content-2 .highlight {
+    color: #D87D4A;
+    /* The primary orange accent color */
+}
+
+/* --- 4. Paragraph (p) Styling --- */
+.brand-text-content-2 p {
+    color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black for a lighter gray look */
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0;
+}
+
+/* The 'audiophile' name in bold */
+.brand-text-content-2 .brand-name {
+    font-weight: bold;
+}
+
+/* --- 5. Image Container and Image (brand-image-container) --- */
+.brand-image-container-2 {
+    /* Occupy the remaining space (around 60%) */
+    flex-basis: 540px;
+    max-width: 540px;
+    border-radius: 8px;
+    /* Matches the product card rounding */
+    /* If your image has the background pattern, ensure it's contained */
+    overflow: hidden;
+}
+
+.brand-image-container-2 img {
+    display: block;
+    width: 90%;
+    /* Makes the image responsive within its container */
+    height: 90%;
+    /* Crucial to ensure the image maintains its shape and fills the space */
+    object-fit: cover;
+    border-radius: 8px;
+    /* Match the container border radius */
+}

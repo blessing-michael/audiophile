@@ -1,0 +1,677 @@
+/* --- Global Reset & Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
+
+:root {
+    --color-primary: #D87D4A;
+    /* Orange accent color */
+    --color-primary-light: #FBAF85;
+    /* Light orange for hover */
+    --color-dark: #0E0E0E;
+
+
+    /* Dark background color */
+    --color-dark-light: #4C4C4C;
+    /* Lightened dark text */
+    --color-light-bg: #F1F1F1;
+    /* Light gray background for cards */
+    --max-content-width: 1110px;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    background-color: #FAFAFA;
+    /* Very light page background */
+    color: var(--color-dark);
+}
+
+.content-wrapper {
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    padding: 0 24px;
+    /* margin-top: 4rem; */
+    /* Default side padding */
+}
+
+/* --- Buttons --- */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-light);
+}
+
+.btn-secondary {
+    /* Used for the ZX9 section */
+    /* Matches btn-primary but inverted colors */
+    display: inline-block;
+    background-color: #000;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #4C4C4C;
+}
+
+.btn-ghost {
+    /* Used for ZX7 and YX1 */
+    display: inline-block;
+    background-color: transparent;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-ghost:hover {
+    background-color: #000;
+    color: #FFFFFF;
+}
+
+.overline-text {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 10px;
+    /* Wide spacing */
+    font-weight: 400;
+}
+
+/* ......................... */
+
+.hero-block {
+    background-color: var(--color-dark);
+    color: #FFFFFF;
+    padding: 120px 0;
+    /* Vertical padding */
+    position: relative;
+    overflow: hidden;
+    /* Contains the image */
+
+}
+
+.hero-content {
+    /* Uses Flexbox to align text and image */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-details {
+    /* Ensures text doesn't take up full width */
+    max-width: 390px;
+    text-align: left;
+    z-index: 2;
+    /* Keep details above the image if needed */
+}
+
+.hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 24px 0;
+}
+
+.hero-description {
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 40px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.hero-image {
+    /* The image is often positioned absolutely or strategically */
+    position: absolute;
+    right: -100px;
+    /* Pushed partially off-screen */
+    bottom: -100px;
+    z-index: 1;
+}
+
+.hero-image img {
+    height: 550px;
+    /* Adjust size to match visual height */
+    width: auto;
+}
+
+.hero-block {
+    background-color: var(--color-dark);
+    color: #FFFFFF;
+    padding: 120px 0;
+    /* Adjust vertical padding as needed */
+    position: relative;
+    /* CRUCIAL: Establishes positioning context for the image */
+    overflow: hidden;
+    /* Ensures the image doesn't cause horizontal scroll if pushed off-screen */
+    height: 600px;
+    /* Give the hero section a fixed height to control image placement better */
+    display: flex;
+    /* Helps vertically center content if needed */
+    align-items: center;
+
+    /* Vertically centers hero-content if it's smaller than hero-block */
+
+    background: linear-gradient(to bottom,
+            /* Direction: from top to bottom */
+            #0E0E0E, to right,
+            /* Start with pure black at the very top */
+            #131313,
+            /* Transition to the slightly lighter dark gray in the middle */
+            #141414
+            /* End with the slightly lighter dark gray at the bottom */
+        );
+
+    background: linear-gradient(to bottom right,
+            /* The diagonal direction */
+            #0E0E0E,
+            /* Color at top-left corner */
+            #131313,
+            /* Transition color */
+            #141414
+            /* Color at bottom-right corner */
+        );
+
+
+
+}
+
+.hero-content {
+    /* Ensures the text content is centered within its wrapper */
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    padding: 0 24px;
+    /* Default side padding */
+
+    display: flex;
+    /* Keeps text and image conceptual blocks separate */
+    justify-content: space-between;
+    /* Pushes text left and image right conceptually */
+    align-items: center;
+    /* Vertical alignment */
+    width: 100%;
+    /* Take full width of content-wrapper */
+    position: relative;
+    /* For image z-index relative to content */
+    z-index: 2;
+    /* Keep content above the image if they overlap */
+}
+
+.hero-details {
+    max-width: 390px;
+    text-align: left;
+    z-index: 3;
+    /* Ensure text is always on top */
+}
+
+/* --- THE KEY IMAGE STYLING --- */
+.hero-image {
+    position: absolute;
+    /* Lifts image out of flow */
+
+    /* --- Positioning --- */
+    right: 50px;
+    /* Adjust as needed, moves it from the right edge of hero-block */
+    bottom: 50px;
+    /* Adjust as needed, moves it from the bottom edge of hero-block */
+
+    /* --- Size & Tilt --- */
+    width: 500px;
+    /* Adjust size based on image source and desired scale */
+    height: auto;
+    /* Maintain aspect ratio */
+    /* transform: rotate(5deg); */
+    /* TILT EFFECT: Adjust degrees for desired tilt */
+
+    object-fit: contain;
+    /* Ensures the image fits without cropping */
+    z-index: 1;
+    /* Keep image below text details */
+}
+
+.hero-image img {
+    display: block;
+    /* Remove extra space below image */
+    width: 100%;
+    height: 100%;
+}
+
+.zx9-promo-section {
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 96px 0;
+    margin-bottom: 48px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 14rem !important;
+    margin-bottom: 4rem !important;
+    /* force visible separation */
+    padding-top: 60px;
+    /* extra internal breathing room */
+    position: relative;
+    /* keeps section in normal document flow */
+    z-index: 1;
+    /* prevents it from being hidden under hero */
+
+}
+
+/* .................................. */
+/* --- Base Container Styles (Ensure position: relative is set!) --- */
+.zx9-promo-section {
+    background-color: var(--color-primary);
+    /* The primary orange color */
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 96px 0px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    /* REQUIRED for pseudo-elements */
+    overflow: hidden;
+    /* CRUCIAL: Hides circles extending past the card edge */
+    height: 560px;
+    z-index: 1;
+    /* Establishes stacking context */
+}
+
+/* --- Circles Parent Container (Optional but good practice for organization) --- */
+/* If you want to group them, you could add a div, but using pseudo-elements on the main section is easier. */
+
+/* --- 1. Small Circle 1 (Around Speaker Head) --- */
+.zx9-promo-section::before {
+    content: "";
+    position: absolute;
+    /* Size: Set dimensions for a circle */
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+
+    /* Appearance: Very light border with low opacity */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Faint white border */
+
+    /* Positioning: Place near the top-left area where the speaker is */
+    top: 50px;
+    left: 10px;
+    top: 170px;
+    left: 40px;
+
+    z-index: 1;
+    /* Behind the content (z-index 2 and 3) */
+}
+
+/* --- 2. Small Circle 2 (Around Speaker Base) --- */
+.zx9-promo-section::after {
+    content: "";
+    position: absolute;
+    /* Size: Slightly larger than the first circle */
+    width: 470px;
+    height: 470px;
+    border-radius: 50%;
+
+    /* Appearance: Same faint border */
+    border: 1px solid rgba(255, 255, 255, 0.215);
+
+    /* Positioning: Place below and slightly to the right of the first circle */
+    top: 200px;
+    left: 80px;
+
+    z-index: 1;
+}
+
+/* --- 3. Large Circle (Background Pattern) --- */
+/* Since we used ::before and ::after, we need a third element. 
+   A common practice is to wrap the content and use a class on the wrapper, 
+   or add a third pseudo-element to a child container, but here we'll use a specific class: */
+
+/* Assuming you can add a div with class 'zx9-background-circles' inside the section: */
+
+/* If you can't add a div, you must use a background image for the pattern. 
+   Assuming you can add a div for simplicity: */
+
+.zx9-promo-circles {
+    position: absolute;
+    top: 68%;
+    left: 18%;
+    /* bottom: 0%; */
+    transform: translateY(-50%);
+    /* Center vertically */
+    z-index: 0;
+    /* Ensures it is always behind everything */
+}
+
+.zx9-promo-circles .large-circle {
+    /* Use a large circle positioned at the side, bleeding off the edge */
+    width: 880px;
+    /* Exact width from the design file */
+    height: 880px;
+    border-radius: 50%;
+
+    /* Appearance */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Very, very faint white border */
+
+    /* Positioning (Place it in the top-left, centered vertically) */
+    position: absolute;
+    top: 50%;
+    left: -280px;
+    /* Pushes it far off the left edge */
+    transform: translateY(-50%);
+}
+
+/* ...................................... */
+
+
+
+
+
+.zx9-image img {
+    /* Image of the speaker is huge and positioned left */
+    width: 410px;
+    height: 453px;
+    /* Often positioned slightly differently to achieve the large scale effect */
+    /* position: absolute; */
+    position: relative;
+    bottom: 0%;
+    z-index: 2;
+
+    /* bottom: 0%; */
+
+    /* Set the container for the image */
+    position: absolute;
+    bottom: 0%;
+    /* Start vertical center */
+    left: 10%;
+    /* Adjust this percentage to control horizontal placement */
+
+    /* CRUCIAL: Adjusts position to perfectly center the base of the speaker and control its position */
+    /* transform: translate(-50%, -50%); */
+    /* Centers the image relative to its own size */
+
+    z-index: 2;
+}
+
+.zx9-details {
+    max-width: 349px;
+    text-align: left;
+    /* background-color: #141414; */
+    margin-right: 4rem;
+    /* padding-right: 8rem; */
+}
+
+.zx9-details h2 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin: 24px 0;
+}
+
+.zx9-details p {
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 40px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+/* .............. */
+/* Add this near the end of your CSS file */
+.zx9-promo-section {}
+
+/* --- 1. Split Promotions Container (Side-by-Side Layout) --- */
+.split-promotions {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    /* Space between the two main halves */
+    margin-top: 48px;
+    margin-bottom: 48px;
+    background-color: #F1F1F1;
+    /* Reduce bottom margin if YX1 follows immediately */
+}
+
+/* --- 2. ZX7 Speaker Banner Styling (Left Half) --- */
+.zx7-banner {
+    /* Takes half the space, maintaining the gap */
+    width: calc(50% - 15px);
+    height: 320px;
+
+    /* Background Image setup (Used for the ZX7 design) */
+    background-image: url('path/to/zx7-speaker-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 8px;
+
+    /* Center text content vertically */
+    display: flex;
+    align-items: center;
+
+}
+
+.zx7-banner .promo-text-details {
+    /* padding-left: 95px; */
+    /* Pushes text away from the left edge */
+    text-align: left;
+}
+
+.zx7-banner h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+/* --- 3. Right Side: Dedicated Image Card (Using your classes) --- */
+.zx7speaker-card {
+    /* Takes half the space, maintaining the gap */
+    /* width: calc(50% - 15px); */
+    height: 320px;
+    /* Match the height of the ZX7 banner */
+
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--color-dark);
+    /* Dark background for the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image Container (Handles the image inside the card) */
+.zx7speaker-card .zx7-image-container {
+    width: 100%;
+    height: 100%;
+    /* No flex here, just the image */
+}
+
+.zx7speaker-card .zx7-image-container img {
+    /* NOTE: If you are showing the YX1 earphones, use that image path here */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image fills the space */
+    border-radius: 8px;
+    display: block;
+}
+
+.zx7-banner {
+    background-image: url(/assets/images/z-speaker.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 8px;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* moves text to left */
+    min-height: 320px;
+    /* adjust height */
+}
+
+.zx7-banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 8px;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 320px;
+}
+
+
+.promo-text-details h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    /* background-color: #D87D4A; */
+}
+
+.btn-ghost {
+    border: 1px solid black;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.zx7-banner {
+    width: 1110px;
+    height: 320px;
+    margin: 0 auto;
+    /* centers it */
+    border-radius: 8px;
+
+    /* background image behavior */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* flex to align text */
+    display: flex;
+    align-items: center;
+    padding-left: 95px;
+    /* same spacing as Audiophile */
+}
+
+/* Text styling is your existing style already */
+.promo-text-details h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    /* background-color: #D87D4A; */
+    /* margin-left: 3rem; */
+}
+
+.btn-ghost {
+    border: 1px solid black;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
+/* 1. YX1 Section Container */
+.yx1-promotion-section {
+    display: flex;
+    /* Key to placing the two children side-by-side */
+    gap: 30px;
+
+    margin-top: 4rem !important;
+    margin-bottom: 12rem !important;
+
+    /* margin-bottom: 300px; */
+    align-items: center;
+
+
+}
+
+/* 2. YX1 Image Container (Left Half) */
+.yx1-image-container {
+    background-color: var(--color-light-bg);
+    border-radius: 8px;
+    width: 50%;
+    height: 320px;
+
+    overflow: hidden;
+
+
+    align-items: flex-start;
+}
+
+.yx1-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+/* 3. YX1 Text/Details Container (Right Half) */
+.yx1-details-container {
+    background-color: var(--color-light-bg);
+    border-radius: 8px;
+    width: 50%;
+    height: 320px;
+
+    padding-left: 95px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    text-align: left;
+}
+
+.yx1-details-container h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 32px;
+    /* Space between title and button */
+}
